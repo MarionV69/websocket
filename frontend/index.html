@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Welcome to my chat!</h1>
+      <div class="iam">I am : <span id="whoami"></span></div>
+      <div id="message" class="messages"></div>
+    </main>
+    <form class="input-bar">
+      <input name="message" placeholder="Message" />
+      <button type="submit" class="submit-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#0f6582"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-send-icon lucide-send"
+        >
+          <path
+            d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+          />
+          <path d="m21.854 2.147-10.94 10.939" />
+        </svg>
+      </button>
+    </form>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
