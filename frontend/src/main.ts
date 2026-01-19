@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 import "./style.css";
 
-const form = document.querySelector("form")!;
+const form = document.querySelector(".input-bar")!;
 const input = form.querySelector("input[name='message']")! as HTMLInputElement;
 
 const CHANNEL = "message";
@@ -22,8 +22,11 @@ function displayMessage(message: string) {
   const paragraph = div.appendChild(document.createElement("p"));
   paragraph.classList.add("msg-paragraph");
   paragraph.textContent = message;
+
+  const scrollTarget =
+    document.documentElement.scrollHeight || document.body.scrollHeight;
   window.scrollTo({
-    top: document.body.scrollHeight,
+    top: scrollTarget,
     behavior: "smooth",
   });
 }
