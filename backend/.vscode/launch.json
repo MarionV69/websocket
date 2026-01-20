@@ -5,11 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "TSX",
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/index.js"
+      "runtimeExecutable": "tsx",
+      "args": ["index.ts"],
+      "cwd": "${workspaceFolder}/",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }
